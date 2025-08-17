@@ -13,20 +13,32 @@ The Numerology Discount System is a revolutionary feature that provides personal
 
 ### 🎁 **Special Occasion Discounts**
 - **Birthday Special**: 25% off on user's birthday
+- **Master 11 Birthday**: 40% off (exponential spiritual celebration)
+- **Master 22 Birthday**: 50% off (exponential visionary celebration)
+- **Master 33 Birthday**: 60% off (ultimate exponential celebration)
 - **Birth Month Celebration**: 15% off throughout birth month
 - **Lucky Number Days**: 12% off when current date matches lucky numbers
 - **Numerology Compatibility**: 18% off for compatible Life Path Numbers
+- **Twin Flame Compatibility**: 45% off for matching master numbers
 
-### 🌟 **Master Number Premium Rates**
-- **Life Path 11**: 16-25% off (Intuitive energy)
-- **Life Path 22**: 17-26% off (Master Builder energy)
-- **Life Path 33**: 18-27% off (Master Teacher energy)
+### 🌟 **Master Number Exponential Rates**
+- **Life Path 11**: 25-45% off (Master Intuitive energy with 2.5x multiplier)
+- **Life Path 22**: 30-55% off (Master Builder energy with 3.0x multiplier)
+- **Life Path 33**: 35-65% off (Master Teacher energy with 4.0x multiplier - HIGHEST)
 
 ## Discount Calculation Algorithm
 
 ### Base Discount Formula
 ```typescript
+// For regular numbers (1-9)
 baseDiscount = Math.min(0.25, 0.05 + (lifePathNumber * 0.01))
+
+// For master numbers (11, 22, 33) - Exponential scaling
+baseDiscount = Math.min(0.40, 0.10 + (masterNumber * 0.02) * exponentialMultiplier)
+// Where exponentialMultiplier is:
+// - Life Path 11: 2.5x
+// - Life Path 22: 3.0x  
+// - Life Path 33: 4.0x (highest)
 ```
 
 ### Bonus Calculations
@@ -37,7 +49,12 @@ baseDiscount = Math.min(0.25, 0.05 + (lifePathNumber * 0.01))
 
 ### Total Discount Formula
 ```typescript
-totalDiscount = Math.min(0.50, baseDiscount + luckyBonus + seasonalBonus + specialBonus + ageBonus)
+// Dynamic maximum discount based on Life Path Number
+maxDiscount = lifePathNumber === 33 ? 0.75 : 
+              lifePathNumber === 22 ? 0.70 :
+              lifePathNumber === 11 ? 0.65 : 0.50
+
+totalDiscount = Math.min(maxDiscount, baseDiscount + luckyBonus + seasonalBonus + specialBonus + ageBonus)
 ```
 
 ## Life Path Number Discount Rates
@@ -53,9 +70,9 @@ totalDiscount = Math.min(0.50, baseDiscount + luckyBonus + seasonalBonus + speci
 | 7 | Seeker | 12-21% | 24% | Analytical and spiritual discounts |
 | 8 | Achiever | 13-22% | 28% | Ambitious and powerful savings |
 | 9 | Humanitarian | 14-23% | 26% | Compassionate and universal deals |
-| 11 | Intuitive | 16-25% | 30% | Spiritual and mystical discounts |
-| 22 | Master Builder | 17-26% | 32% | Visionary and transformative savings |
-| 33 | Master Teacher | 18-27% | 35% | Healing and nurturing discounts |
+| 11 | Master Intuitive | 25-45% | 65% | Exponential spiritual and mystical discounts |
+| 22 | Master Builder | 30-55% | 70% | Exponential visionary and transformative savings |
+| 33 | Master Teacher | 35-65% | 75% | Ultimate exponential healing and nurturing discounts |
 
 ## Seasonal Bonuses
 

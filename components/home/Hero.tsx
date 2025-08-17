@@ -3,17 +3,26 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Sparkles, Crown, Gem, Heart, Star, Moon, Sun, Zap } from 'lucide-react'
+import { Sparkles, Crown, Gem, Heart, Star, Moon, Sun, Zap, Flower2, Diamond } from 'lucide-react'
+import LotusLogo from '@/components/ui/LotusLogo'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-spiritual overflow-hidden">
-      {/* Mystical Background Elements */}
+    <section className="relative min-h-screen bg-gradient-to-br from-spiritual-red-50 via-spiritual-gold-50 to-spiritual-orange-50 overflow-hidden">
+      {/* Traditional Indian Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-spiritual-magenta/20 rounded-full animate-spiritual-glow blur-xl"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 bg-spiritual-purple/20 rounded-full animate-mystical-float blur-lg"></div>
-        <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-spiritual-indigo/15 rounded-full animate-aura-pulse blur-2xl"></div>
-        <div className="absolute top-1/2 right-1/4 w-28 h-28 bg-spiritual-teal/20 rounded-full animate-chakra-spin blur-lg"></div>
+        {/* Fabric texture overlay */}
+        <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-spiritual-gold-100/20 to-spiritual-orange-100/20"></div>
+        
+        {/* Floating jewelry elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 bg-spiritual-gold/20 rounded-full animate-spiritual-glow blur-xl"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-spiritual-red/20 rounded-full animate-mystical-float blur-lg"></div>
+        <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-spiritual-orange/15 rounded-full animate-aura-pulse blur-2xl"></div>
+        <div className="absolute top-1/2 right-1/4 w-28 h-28 bg-spiritual-gold/20 rounded-full animate-chakra-spin blur-lg"></div>
+        
+        {/* Traditional patterns */}
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-spiritual-red-100/30 to-transparent"></div>
+        <div className="absolute bottom-0 right-0 w-full h-32 bg-gradient-to-t from-spiritual-orange-100/30 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20">
@@ -25,15 +34,15 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-            {/* Spiritual Badge */}
+            {/* Traditional Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-spiritual-magenta/20 to-spiritual-purple/20 text-spiritual-magenta font-bold rounded-full text-sm border border-spiritual-magenta/30 shadow-spiritual mb-8"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-spiritual-red/20 to-spiritual-gold/20 text-spiritual-red-700 font-bold rounded-full text-sm border border-spiritual-red/30 shadow-lg mb-8"
             >
-              <Sparkles className="w-5 h-5 mr-2 animate-sparkle" />
-              ✨ Awaken Your Spiritual Essence
+              <Flower2 className="w-5 h-5 mr-2 animate-sparkle" />
+              🌸 Traditional Indian Collection
             </motion.div>
 
             {/* Main Heading */}

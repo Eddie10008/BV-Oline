@@ -186,7 +186,7 @@ export default async function ProfilePage() {
         )}
 
         {/* Quick Actions */}
-        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           <a
             href="/discounts"
             className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow"
@@ -199,6 +199,21 @@ export default async function ProfilePage() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900">My Discounts</h3>
               <p className="text-gray-600">Numerology discounts</p>
+            </div>
+          </a>
+          
+          <a
+            href="/gemstones"
+            className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow"
+          >
+            <div className="text-center">
+              <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900">Gemstone Guide</h3>
+              <p className="text-gray-600">Personalized jewelry</p>
             </div>
           </a>
           

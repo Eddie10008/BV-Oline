@@ -271,6 +271,7 @@ module.exports = {
         'mystical-float': 'mysticalFloat 8s ease-in-out infinite',
         'aura-pulse': 'auraPulse 6s ease-in-out infinite',
         'chakra-spin': 'chakraSpin 10s linear infinite',
+        'spin-slow': 'spinSlow 20s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -376,6 +377,10 @@ module.exports = {
           },
         },
         chakraSpin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        spinSlow: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },

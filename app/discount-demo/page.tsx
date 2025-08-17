@@ -156,66 +156,74 @@ export default function DiscountDemoPage() {
           </div>
 
           {/* Discount Examples */}
-          <div className="mt-12 grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Sample Discounts by Life Path</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span>Life Path 1 (Pioneer):</span>
-                  <span className="font-medium">6-15% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Life Path 5 (Adventurer):</span>
-                  <span className="font-medium">9-18% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Life Path 8 (Achiever):</span>
-                  <span className="font-medium">13-22% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Life Path 11 (Intuitive):</span>
-                  <span className="font-medium">16-25% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Life Path 22 (Master Builder):</span>
-                  <span className="font-medium">17-26% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Life Path 33 (Master Teacher):</span>
-                  <span className="font-medium">18-27% off</span>
-                </div>
-              </div>
-            </div>
+                     <div className="mt-12 grid md:grid-cols-2 gap-8">
+             <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6">
+               <h3 className="text-lg font-semibold text-gray-900 mb-4">Sample Discounts by Life Path</h3>
+               <div className="space-y-3 text-sm">
+                 <div className="flex justify-between">
+                   <span>Life Path 1 (Pioneer):</span>
+                   <span className="font-medium">6-15% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span>Life Path 5 (Adventurer):</span>
+                   <span className="font-medium">9-18% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span>Life Path 8 (Achiever):</span>
+                   <span className="font-medium">13-22% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-purple-600 font-semibold">🌟 Life Path 11 (Master Intuitive):</span>
+                   <span className="font-medium text-purple-600">25-45% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-indigo-600 font-semibold">🌟 Life Path 22 (Master Builder):</span>
+                   <span className="font-medium text-indigo-600">30-55% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-pink-600 font-semibold">🌟 Life Path 33 (Master Teacher):</span>
+                   <span className="font-medium text-pink-600">35-65% off</span>
+                 </div>
+               </div>
+             </div>
             
-            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Special Occasion Bonuses</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span>Birthday Special:</span>
-                  <span className="font-medium">25% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Birth Month:</span>
-                  <span className="font-medium">15% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Lucky Number Day:</span>
-                  <span className="font-medium">12% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Numerology Compatibility:</span>
-                  <span className="font-medium">18% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Seasonal Bonus:</span>
-                  <span className="font-medium">2-7% off</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Age Loyalty:</span>
-                  <span className="font-medium">Up to 5% off</span>
-                </div>
-              </div>
-            </div>
+                         <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6">
+               <h3 className="text-lg font-semibold text-gray-900 mb-4">Special Occasion Bonuses</h3>
+               <div className="space-y-3 text-sm">
+                 <div className="flex justify-between">
+                   <span>Birthday Special:</span>
+                   <span className="font-medium">25% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-purple-600 font-semibold">🌟 Master 11 Birthday:</span>
+                   <span className="font-medium text-purple-600">40% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-indigo-600 font-semibold">🌟 Master 22 Birthday:</span>
+                   <span className="font-medium text-indigo-600">50% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-pink-600 font-semibold">🌟 Master 33 Birthday:</span>
+                   <span className="font-medium text-pink-600">60% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span>Birth Month:</span>
+                   <span className="font-medium">15% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span>Lucky Number Day:</span>
+                   <span className="font-medium">12% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span>Numerology Compatibility:</span>
+                   <span className="font-medium">18% off</span>
+                 </div>
+                 <div className="flex justify-between">
+                   <span className="text-pink-600 font-semibold">🌟 Twin Flame Compatibility:</span>
+                   <span className="font-medium text-pink-600">45% off</span>
+                 </div>
+               </div>
+             </div>
           </div>
         </div>
 
